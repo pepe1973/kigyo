@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<FieldPlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Rows>
+    <string>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+    <string>X       X                           X       X</string>
+    <string>X       X                           X       X</string>
+    <string>X 1 X   X   XXXXX   XXXXX   XXXXX   X   X   X</string>
+    <string>X   X       X                   X       X   X</string>
+    <string>X   X       X                   X       X   X</string>
+    <string>    X   X   X   XXXXX   XXXXX   X   X   X    </string>
+    <string>        X   X       X   X       X   X        </string>
+    <string>        X   X       X   X       X   X        </string>
+    <string>XXXXXXXXX   XXXXX   X   X   XXXXX   XXXXXXXXX</string>
+    <string>X                   X   X                   X</string>
+    <string>X                   X   X                   X</string>
+    <string>X   X   XXXXXXXXX   X   X   XXXXXXXXX   X   X</string>
+    <string>X   X                                   X   X</string>
+    <string>X   X                                   X   X</string>
+    <string>X   X   X       X   XXXXX   X       X   X 2 X</string>
+    <string>X       X       X           X       X       X</string>
+    <string>X       X       X           X       X       X</string>
+    <string>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+  </Rows>
+  <XSize>45</XSize>
+  <YSize>19</YSize>
+  <S1TailDirection>Down</S1TailDirection>
+  <S2TailDirection>Up</S2TailDirection>
+  <GrowthRate>25</GrowthRate>
+  <AppleFrequency>25</AppleFrequency>
+  <MinAppleLife>20</MinAppleLife>
+  <MaxAppleLife>30</MaxAppleLife>
+  <PointsForApple>100</PointsForApple>
+  <WinPoints>1000</WinPoints>
+</FieldPlan>

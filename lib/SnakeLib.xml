@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnakeLib</name>
+    </assembly>
+    <members>
+        <member name="P:SnakeLib.Brains.SnakeBrainBase.Field">
+            <summary>
+            The Field where the game plays.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Brains.SnakeBrainBase.Enemy">
+            <summary>
+            The other snake, who shall DIE.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Brains.SnakeBrainBase.Me">
+            <summary>
+            The greatest'n'bravest of all snakes.
+            </summary>
+        </member>
+        <member name="M:SnakeLib.Brains.SnakeBrainBase.GetHeadForDirection(SnakeLib.Direction)">
+            <summary>
+            Helper method that returns what the next head position would be if the snake moved in the 
+            given direction.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Brains.SnakeBrainBase.Name">
+            <summary>
+            The name of the brain.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Brains.SnakeBrainBase.Author">
+            <summary>
+            Name of the creator of the brain (i.e. the super-brain)
+            </summary>
+        </member>
+        <member name="M:SnakeLib.Brains.SnakeBrainBase.AppleGone(SnakeLib.Apple)">
+            <summary>
+            Brain implementations can handle cases when an apple is gone from the field
+            </summary>
+            <param name="apple"></param>
+        </member>
+        <member name="M:SnakeLib.Brains.SnakeBrainBase.AppleAdded(SnakeLib.Apple)">
+            <summary>
+            Brain implementations can handle cases when an apple is added to the field
+            </summary>
+            <param name="apple"></param>
+        </member>
+        <member name="M:SnakeLib.Controls.SnakeGrid.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:SnakeLib.Controls.SnakeGrid.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SnakeLib.Controls.SnakeGrid.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:SnakeLib.Controls.SnakeTesterPanel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SnakeLib.Controls.SnakeTesterPanel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SnakeLib.Controls.SnakeTesterPanel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.Item(SnakeLib.Point)">
+            <summary>
+            Returns the cell information for the given location
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.Item(System.Int32,System.Int32)">
+            <summary>
+            Returns the cell information for the given location
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.Apples">
+            <summary>
+            The list of apples visible in the field.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.Snakes">
+            <summary>
+            The list of snakes.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.GrowthRate">
+            <summary>
+            The number of steps after which the snakes are growing by one
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.AppleFrequency">
+            <summary>
+            The average number of steps between apples are put in the field. The smaler this number is,
+            the more often will apples appear.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.MinAppleLife">
+            <summary>
+            The minimum number of steps while an apple is displayed.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.MaxAppleLife">
+            <summary>
+            The maximum number of steps while an apple is displayed.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.PointsForApple">
+            <summary>
+            The number of points the snake eating an apple is awarded.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.WinPoints">
+            <summary>
+            The player reaching this score wins.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.XSize">
+            <summary>
+            The width of the game field
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.YSize">
+            <summary>
+            The height of the game field
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Snake.Head">
+            <summary>
+            The position of the head
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Snake.Tail">
+            <summary>
+            The position of the tail (i.e. the last element of the snake)
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Snake.LastTail">
+            <summary>
+            The position of the tail as it was in the previous step. It can be null if 
+            the snake has just grown or has not moved yet.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Snake.MovementDirection">
+            <summary>
+            The direction the snake moved previously. This is null at the first move.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Snake.Score">
+            <summary>
+            The current score of the snake
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Snake.Size">
+            <summary>
+            The current size of the snake
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Snake.Item(System.Int32)">
+            <summary>
+            Returns the given point of the snake. The point at the 0. position is the Head, 
+            the point at the last position (Size - 1) is the Tail.
+            </summary>
+        </member>
+    </members>
+</doc>
