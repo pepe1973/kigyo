@@ -1,4 +1,4 @@
-# Szinti Snake Competition 2019
+# Szinti Snake Competition
 
 This project was created as the starting point of a coding game and competition hosted by Synthesis-Net LLC.
 
