@@ -5,7 +5,7 @@ This project was created as the starting point of a coding game and competition 
 ## The goal
 
 The game is played in an arena, where two individual snakes fight for points by finding apples. The one, which has more points at the end of the round, or survived longer is the winner. The goal of the competitors is to build a snake brain, which can navigate through different arena layouts, collect more apples and points, and outsmart the opponent.
-For more information about the deadlines, entry and solution submit please refer to the competition announcement at https://szintisnake.ticketninja.io/
+For more information about the deadlines, entry and solution submit please refer to the competition announcement at https://szintisnake2021.ticketninja.io/
 
 ## Questions
 For techincal questions, submit an issue.
