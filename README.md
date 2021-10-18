@@ -33,7 +33,7 @@ _(As an example, Simple.arena is setup with powerups. Please check the .arena xm
 #### Rules
 * Powerups can be used only for a specific amount (Usage). When it reaches 0 the powerup cannot be used anymore.
 * Snakes can have multiple powerups but they can have only 1 from each different type.
-* Snakes can pick up a powerup with the same type they already have, in this case the powerup Usage set back to maximum (they do not stack!). The point for picking it up is sumbitted of course.
+* Snakes can pick up a powerup with the same type they already have, in this case the powerup Usage gets set back to maximum (they do not stack!). The score for picking it up is sumbitted of course.
 * Passive powerups used up automatically when they are needed. (i.e. when hitting a wall)
 * Active powerups need to be activated by Snakes (safety measures need to be handled by powerup owners).
 * Powerups are lost when round ends or when game ends.
