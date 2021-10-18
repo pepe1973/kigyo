@@ -4,9 +4,24 @@
         <name>SnakeLib</name>
     </assembly>
     <members>
+        <member name="T:SnakeLib.Brains.RightieSnakeBrain">
+            <summary>
+            Snake that goes Right, no matter what happens.
+            </summary>
+        </member>
+        <member name="T:SnakeLib.Brains.LeftieSnakeBrain">
+            <summary>
+            Snake that goes Left, no matter what happens.
+            </summary>
+        </member>
         <member name="P:SnakeLib.Brains.SnakeBrainBase.Field">
             <summary>
             The Field where the game plays.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Brains.SnakeBrainBase.SnakeID">
+            <summary>
+            Unique identifier
             </summary>
         </member>
         <member name="P:SnakeLib.Brains.SnakeBrainBase.Enemy">
@@ -19,10 +34,21 @@
             The greatest'n'bravest of all snakes.
             </summary>
         </member>
+        <member name="P:SnakeLib.Brains.SnakeBrainBase.SnakePowerUps">
+            <summary>
+            Picked up power ups
+            </summary>
+        </member>
         <member name="M:SnakeLib.Brains.SnakeBrainBase.GetHeadForDirection(SnakeLib.Direction)">
             <summary>
             Helper method that returns what the next head position would be if the snake moved in the 
-            given direction.
+            given direction. Does not handle diagonal directions.
+            </summary>
+        </member>
+        <member name="M:SnakeLib.Brains.SnakeBrainBase.GetHeadForMovement(SnakeLib.Movement)">
+            <summary>
+            Helper method that returns what the next head position would be if the snake moved in the 
+            given direction. Handles diagonal directions.
             </summary>
         </member>
         <member name="P:SnakeLib.Brains.SnakeBrainBase.Name">
@@ -35,17 +61,92 @@
             Name of the creator of the brain (i.e. the super-brain)
             </summary>
         </member>
+        <member name="M:SnakeLib.Brains.SnakeBrainBase.GetNextMovement(System.Boolean)">
+            <summary>
+            Main method to control snake.
+            </summary>
+            <param name="grow">In parameter whether snake will grow or not.</param>
+            <returns></returns>
+        </member>
         <member name="M:SnakeLib.Brains.SnakeBrainBase.AppleGone(SnakeLib.Apple)">
             <summary>
             Brain implementations can handle cases when an apple is gone from the field
             </summary>
             <param name="apple"></param>
         </member>
+        <member name="M:SnakeLib.Brains.SnakeBrainBase.PowerUpGone(SnakeLib.PowerUp)">
+            <summary>
+            Brain implementations can handle cases when an powerUp is gone from the field
+            </summary>
+            <param name="powerUp"></param>
+        </member>
         <member name="M:SnakeLib.Brains.SnakeBrainBase.AppleAdded(SnakeLib.Apple)">
             <summary>
             Brain implementations can handle cases when an apple is added to the field
             </summary>
             <param name="apple"></param>
+        </member>
+        <member name="M:SnakeLib.Brains.SnakeBrainBase.PowerUpAdded(SnakeLib.PowerUp)">
+            <summary>
+            Brain implementations can handle cases when an powerUp is added to the field
+            </summary>
+            <param name="powerUp"></param>
+        </member>
+        <member name="P:SnakeLib.Movement.Direction">
+            <summary>
+            Returns the cell information for the given location
+            </summary>
+        </member>
+        <member name="P:SnakeLib.Movement.PowerUp">
+            <summary>
+            The active powerup that will be is used in current step.
+            </summary>
+        </member>
+        <member name="M:SnakeLib.Movement.ActivateReversePowerUp">
+            <summary>
+            Your snake will turn around in its step.
+            </summary>
+        </member>
+        <member name="M:SnakeLib.Movement.ActivateDiagonalPowerUp(SnakeLib.Direction)">
+            <summary>
+            Your Snake will step diagonally based on <code>Direction</code> and <code>secondDir</code>
+            </summary>
+            <param name="secondDir">Direction for diagonal move</param>
+        </member>
+        <member name="M:SnakeLib.Movement.IsReversePowerUpActivated">
+            <summary>
+            Return true if you activated the Reverse powerup
+            </summary>
+        </member>
+        <member name="M:SnakeLib.Movement.IsDiagonalPowerUpActivated">
+            <summary>
+            Return true if you activated the Diagonal powerup
+            </summary>
+        </member>
+        <member name="T:SnakeLib.Enums.PowerUpType">
+            <summary>
+            Types of PowerUps
+            </summary>
+        </member>
+        <member name="F:SnakeLib.Enums.PowerUpType.NoWall">
+            <summary>
+            Can pass through 1 block of wall. Passive (means activated automatically when hitting a wall).
+            </summary>
+        </member>
+        <member name="F:SnakeLib.Enums.PowerUpType.Diagonal">
+            <summary>
+            Can step diagonally. Need to define a second direction.
+            </summary>
+        </member>
+        <member name="F:SnakeLib.Enums.PowerUpType.Reverse">
+            <summary>
+            Snake turns around (head replaced with tail) and move 1 step in given direction.
+            </summary>
+        </member>
+        <member name="T:SnakeLib.PowerUp">
+            <summary>
+            Represents a PowerUp with a location, lifetime, age and usages left.
+            </summary>
         </member>
         <member name="M:SnakeLib.Controls.SnakeGrid.Dispose(System.Boolean)">
             <summary> 
@@ -81,6 +182,22 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="M:SnakeLib.Engine.CheckIfThinkTimeExceeded">
+            <summary>
+            Check if think time was exceeded for any of the snakes.
+            </summary>
+            <returns>true if exceeded and handled, false otherwise</returns>
+        </member>
+        <member name="M:SnakeLib.Engine.IsPickingPowerUp">
+            <summary>
+            If any of the snakes hit a powerUp
+            </summary>
+        </member>
+        <member name="M:SnakeLib.Engine.IsHittingWall(System.Boolean@,System.Boolean@)">
+            <summary>
+            If snakes hit wall
+            </summary>
+        </member>
         <member name="P:SnakeLib.GameField.Item(SnakeLib.Point)">
             <summary>
             Returns the cell information for the given location
@@ -94,6 +211,11 @@
         <member name="P:SnakeLib.GameField.Apples">
             <summary>
             The list of apples visible in the field.
+            </summary>
+        </member>
+        <member name="P:SnakeLib.GameField.PowerUps">
+            <summary>
+            The list of PowerUps visible in the field.
             </summary>
         </member>
         <member name="P:SnakeLib.GameField.Snakes">
@@ -142,6 +264,17 @@
             The height of the game field
             </summary>
         </member>
+        <member name="M:SnakeLib.GameField.UpdateSnakes">
+            <summary>
+            Update the snakes in the game field.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SnakeLib.GameField.FieldPlan">
+            <summary>
+            The original field plan that ws loaded
+            </summary>
+        </member>
         <member name="P:SnakeLib.Snake.Head">
             <summary>
             The position of the head
@@ -168,6 +301,11 @@
             The current score of the snake
             </summary>
         </member>
+        <member name="P:SnakeLib.Snake.ThinkTime">
+            <summary>
+            The total thinking time of the snake
+            </summary>
+        </member>
         <member name="P:SnakeLib.Snake.Size">
             <summary>
             The current size of the snake
@@ -177,6 +315,23 @@
             <summary>
             Returns the given point of the snake. The point at the 0. position is the Head, 
             the point at the last position (Size - 1) is the Tail.
+            </summary>
+        </member>
+        <member name="F:SnakeTester.ReplayForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SnakeTester.ReplayForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SnakeTester.ReplayForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
             </summary>
         </member>
     </members>

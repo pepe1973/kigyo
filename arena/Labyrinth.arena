@@ -32,4 +32,17 @@
   <MaxAppleLife>30</MaxAppleLife>
   <PointsForApple>100</PointsForApple>
   <WinPoints>1500</WinPoints>
+  <PowerUpFrequency>50</PowerUpFrequency>
+  <MinPowerUpLife>200</MinPowerUpLife>
+  <MaxPowerUpLife>500</MaxPowerUpLife>
+  <PointsForPowerUp>10</PointsForPowerUp>
+  <PowerUpNoWallFrequency>10</PowerUpNoWallFrequency>
+  <PowerUpDiagonalFrequency>10</PowerUpDiagonalFrequency>
+  <PowerUpReverseFrequency>10</PowerUpReverseFrequency>
+  <PowerUpNoWallUsage>3</PowerUpNoWallUsage>
+  <PowerUpDiagonalUsage>10</PowerUpDiagonalUsage>
+  <PowerUpReverseUsage>3</PowerUpReverseUsage>
+  
+  <ThinkTimeLimit>60000</ThinkTimeLimit>
+
 </FieldPlan>
