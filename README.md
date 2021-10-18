@@ -25,12 +25,12 @@ Powerup boxes also display at random time intervals on the field. Their frequenc
 
 _(As an example, Simple.arena is setup with powerups. Please check the .arena xml file for details)_
 
-### Available PowerUps
+#### Available PowerUps
 * **NoWall** ⛏️: Pass through 1 block of wall. Passive - is simply used when available and passing through a wall.
 * **Reverse** 🔃: Turn snake around (tail and head are exchanged). Also steps forward into the returned direction. Active - need to be activated.
 * **Diagonal** ↝: Snake can take a diagonal step. Active - need to activate the powerup with a secondary direction.
 
-### Rules
+#### Rules
 * Powerups can be used only for a specific amount (Usage). When it reaches 0 the powerup cannot be used anymore.
 * Snakes can have multiple powerups but they can have only 1 from each different type.
 * Snakes can pick up a powerup with the same type they already have, in this case the powerup Usage set back to maximum (they do not stack!). The point for picking it up is sumbitted of course.
