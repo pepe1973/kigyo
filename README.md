@@ -10,7 +10,7 @@ For more information about the deadlines, entry and solution submit please refer
 ## What's New in 2021?
 If you competed before, here are the main new features introduced for 2021 - check these out and update your snake to stay on top for 2021:
 * [Powerups](#powerups-) 💪
-* [Time limits](#time-limits-stopwatch) ⏱️
+* [Time limits](#time-limits-%EF%B8%8F) ⏱️
 
 ## Questions
 For techincal questions, submit a question on the [Discussions page](https://github.com/szintisnake/szinti-snake-competition/discussions)
