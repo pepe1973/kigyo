@@ -92,15 +92,34 @@
             </summary>
             <param name="powerUp"></param>
         </member>
-        <member name="P:SnakeLib.Movement.Direction">
+        <member name="T:SnakeLib.Movement">
             <summary>
-            Returns the cell information for the given location
+            Represents a movement that snake brains return after each step.
             </summary>
+        </member>
+        <member name="P:SnakeLib.Movement.Direction">
+             <summary>
+             Gets/sets the cell information for the given location.
+            
+             <para>NOTE that if a DiagonalPowerup is activated, and is not a valid diagonal together with <c>Direction</c>,
+             then the powerup will be deactivated after setting this property</para>
+             </summary>
         </member>
         <member name="P:SnakeLib.Movement.PowerUp">
             <summary>
             The active powerup that will be is used in current step.
             </summary>
+        </member>
+        <member name="M:SnakeLib.Movement.#ctor">
+            <summary>
+            Initializes a Movement.
+            </summary>
+        </member>
+        <member name="M:SnakeLib.Movement.#ctor(SnakeLib.Direction)">
+            <summary>
+            Initializes a Movement with a direction
+            </summary>
+            <param name="dir"></param>
         </member>
         <member name="M:SnakeLib.Movement.ActivateReversePowerUp">
             <summary>
@@ -109,9 +128,17 @@
         </member>
         <member name="M:SnakeLib.Movement.ActivateDiagonalPowerUp(SnakeLib.Direction)">
             <summary>
-            Your Snake will step diagonally based on <code>Direction</code> and <code>secondDir</code>
+            Your Snake will step diagonally based on <c>Direction</c> and <c>secondDir</c>.
+            <para>NOTE that if <paramref name="secondDir"/> is not a valid diagonal together with <c>Direction</c>, then the method does nothing,
+            and the powerup will NOT be activated</para>
             </summary>
             <param name="secondDir">Direction for diagonal move</param>
+        </member>
+        <member name="M:SnakeLib.Movement.IsDiagonalValid(SnakeLib.Direction,SnakeLib.Direction)">
+            <summary>
+            Check if the two directions make sense - i.e. they are truly a diagonal direction.
+            </summary>
+            <returns>true if <paramref name="direction"/> and <paramref name="secondDir"/> are diagonal, false otherwise</returns>
         </member>
         <member name="M:SnakeLib.Movement.IsReversePowerUpActivated">
             <summary>
