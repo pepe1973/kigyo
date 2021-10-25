@@ -53,7 +53,7 @@ This year, to motivate efficiency, we introduced time limits on arenas. The timi
 
 Each file describes the layout of an arena where the snakes are fighting for survival.
 
-### Demo{#1}
+### Demo
 
 A fully functional demo, with arenas, template brains and a snake tester app.
 
