@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<FieldPlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Rows>
+    <string>X              XXXXXXXXXXXXXXXXXXXX              X</string>
+    <string>X          1                          2          X</string>
+    <string>X                                                X</string>
+    <string>X                                                X</string>
+    <string>X        XXXXX         XXXXX         XXXXX       X</string>
+    <string>X       XXXXXXX       XXXXXXX       XXXXXXX      X</string>
+    <string>X      XXXXXXXXX     XXXXXXXXX     XXXXXXXXX     X</string>
+    <string>X      XX  X  XX     XX  X  XX     XX  X  XX     X</string>
+    <string>       XX XX XXX     XX XX XXX     XX XX XXX      </string>
+    <string>       XXXXXXXXX     XXXXXXXXX     XXXXXXXXX      </string>
+    <string>       XXXXXXXXX     XXXXXXXXX     XXXXXXXXX      </string>
+    <string>       X X X X X     X X X X X     X X X X X      </string>
+    <string>X                                                X</string>
+    <string>X                                                X</string>
+    <string>X                           X                    X</string>
+    <string>X                           X                    X</string>
+    <string>X                                                X</string>
+    <string>X                                                X</string>
+    <string>X                           X                    X</string>
+    <string>X                           X                    X</string>
+    <string>X                                                X</string>
+    <string>X                                                X</string>
+    <string>X                           X                    X</string>
+    <string>X                          XXX                   X</string>
+    <string>X                       XXXXXXXXX                X</string>
+    <string>X                       XXXXXXXXX                X</string>
+  </Rows>
+  <XSize>50</XSize>
+  <YSize>26</YSize>
+  <S1TailDirection>Left</S1TailDirection>
+  <S2TailDirection>Right</S2TailDirection>
+  <GrowthRate>10</GrowthRate>
+  <AppleFrequency>10</AppleFrequency>
+  <MinAppleLife>10</MinAppleLife>
+  <MaxAppleLife>35</MaxAppleLife>
+  <PointsForApple>100</PointsForApple>
+  <PowerUpFrequency>50</PowerUpFrequency>
+  <MinPowerUpLife>200</MinPowerUpLife>
+  <MaxPowerUpLife>500</MaxPowerUpLife>
+  <PointsForPowerUp>10</PointsForPowerUp>
+  <PowerUpNoWallFrequency>50</PowerUpNoWallFrequency>
+  <PowerUpDiagonalFrequency>50</PowerUpDiagonalFrequency>
+  <PowerUpReverseFrequency>50</PowerUpReverseFrequency>
+  <PowerUpNoWallUsage>3</PowerUpNoWallUsage>
+  <PowerUpDiagonalUsage>5</PowerUpDiagonalUsage>
+  <PowerUpReverseUsage>1</PowerUpReverseUsage>
+  <WinPoints>1500</WinPoints>
+  <ThinkTimeLimit>60000</ThinkTimeLimit>
+</FieldPlan>

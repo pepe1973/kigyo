@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<FieldPlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Rows>
+    <string>                                        </string>
+    <string>        1       XXXXXXXXXXXXXXXXXXXXXX  </string>
+    <string>               X                        </string>
+    <string>                XXXXXXXXXXXXXXXXXXXXXX  </string>
+    <string>        XXX                             </string>
+    <string>      XX   XX                           </string>
+    <string>     X       X                          </string>
+    <string>    X       X                           </string>
+    <string>    X      X                            </string>
+    <string>   X      X      XX    XX    XX    XX   </string>
+    <string>   X               X  XXXX  XXXX  XXXX  </string>
+    <string>   X      X        X  XXXX  XXXX  XXXX  </string>
+    <string>    X      X     XX    XX    XX    XX   </string>
+    <string>    X       X                           </string>
+    <string>     X       X                          </string>
+    <string>      XX   XX                           </string>
+    <string>        XXX                             </string>
+    <string>                XXXXXXXXXXXXXXXXXXXXXX  </string>
+    <string>               X                        </string>
+    <string>        2       XXXXXXXXXXXXXXXXXXXXXX  </string>
+    <string>                                        </string>
+  </Rows>
+  <XSize>40</XSize>
+  <YSize>21</YSize>
+  <S1TailDirection>Left</S1TailDirection>
+  <S2TailDirection>Left</S2TailDirection>
+  <GrowthRate>10</GrowthRate>
+  <AppleFrequency>50</AppleFrequency>
+  <MinAppleLife>10</MinAppleLife>
+  <MaxAppleLife>35</MaxAppleLife>
+  <PointsForApple>100</PointsForApple>
+  <WinPoints>1500</WinPoints>
+  <PowerUpFrequency>1000</PowerUpFrequency>
+  <MinPowerUpLife>500</MinPowerUpLife>
+  <MaxPowerUpLife>1500</MaxPowerUpLife>
+  <PointsForPowerUp>10</PointsForPowerUp>
+  <PowerUpNoWallFrequency>10</PowerUpNoWallFrequency>
+  <PowerUpDiagonalFrequency>10</PowerUpDiagonalFrequency>
+  <PowerUpReverseFrequency>10</PowerUpReverseFrequency>
+  <PowerUpNoWallUsage>3</PowerUpNoWallUsage>
+  <PowerUpDiagonalUsage>10</PowerUpDiagonalUsage>
+  <PowerUpReverseUsage>3</PowerUpReverseUsage>
+  <WinPoints>1500</WinPoints>
+  <ThinkTimeLimit>60000</ThinkTimeLimit>
+</FieldPlan>
