@@ -7,10 +7,8 @@ This project was created as the starting point of a coding game and competition 
 The game is played in an arena, where two individual snakes fight for points by finding apples. The one, which has more points at the end of the round, or survived longer is the winner. The goal of the competitors is to build a snake brain, which can navigate through different arena layouts, collect more apples, points and powerups, and outsmart the opponent.
 For more information about the deadlines, entry and solution submit please refer to the competition announcement at https://szintisnake2021.ticketninja.io/
 
-## What's New in 2021?
-If you competed before, here are the main new features introduced for 2021 - check these out and update your snake to stay on top for 2021:
-* [Powerups](#powerups-) 💪
-* [Time limits](#time-limits-%EF%B8%8F) ⏱️
+## What's New in 2022?
+This year we are using our good, solid framework with the new powerups from last year. Be prepared that there will be new arenas in which your snakes will fight.
 
 ## Questions
 For techincal questions, submit a question on the [Discussions page](https://github.com/szintisnake/szinti-snake-competition/discussions)
